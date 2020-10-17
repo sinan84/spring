@@ -7,5 +7,6 @@ public class CybertekApp {
         Mentor mentor = new Mentor(fullTime, partTime);
         mentor.manageAccount();
 
+        System.out.println("Tightly Coupled works...");
     }
 }
