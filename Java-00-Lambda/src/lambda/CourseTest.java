@@ -30,5 +30,8 @@ public class CourseTest {
         };
         seleniumCourse3.study();
 
+        //Java javaCourse4 = () -> System.out.println("This is javaCourse4...");
+        //Target type of lambda conversion must be an interface. Error
+
     }
 }
