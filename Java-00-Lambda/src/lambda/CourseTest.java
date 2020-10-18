@@ -8,11 +8,27 @@ public class CourseTest {
         Course seleniumCourse = () -> System.out.println("This is CourseTest Class");
         seleniumCourse.study();
 
-        Course java = new Java();
-        java.study();
+        Course javaCourse2 = new Java();
+        javaCourse2.study();
 
-        Course selenium = new Selenium();
-        selenium.study();
+        Course seleniumCourse2 = new Selenium();
+        seleniumCourse2.study();
+
+        Course javaCourse3 = new Course() {
+            @Override
+            public void study() {
+                System.out.println("Studying Java");
+            }
+        };
+        javaCourse3.study();
+
+        Course seleniumCourse3 = new Course() {
+            @Override
+            public void study() {
+                System.out.println("Studying Selenium");
+            }
+        };
+        seleniumCourse3.study();
 
     }
 }
