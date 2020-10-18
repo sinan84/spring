@@ -1,4 +1,4 @@
-package lambda;
+package lambda.course;
 
 public class Java implements Course{
     @Override

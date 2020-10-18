@@ -1,4 +1,4 @@
-package lambda;
+package lambda.course;
 
 public class Selenium implements Course{
     @Override
