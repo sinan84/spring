@@ -15,4 +15,5 @@ public class Selenium implements Course {
         System.out.println("Weekly teaching hours : " + (20 + extraSessions.getHours()));
 
     }
+
 }
