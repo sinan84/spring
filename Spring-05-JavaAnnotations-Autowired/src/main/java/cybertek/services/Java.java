@@ -6,9 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Java implements Course {
 
+    private OfficeHours officeHours;
+
     public void getTeachingHours() {
 
-            System.out.println("Weekly teaching hours : 30" );
+            System.out.println("Weekly teaching hours :" +(30+officeHours.getHours()) );
 
     }
 }
