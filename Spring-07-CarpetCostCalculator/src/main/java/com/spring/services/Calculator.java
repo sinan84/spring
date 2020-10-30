@@ -1,4 +1,4 @@
 package com.spring.services;
 
-public class Calculater {
+public class Calculator {
 }
