@@ -10,21 +10,20 @@ import java.util.Map;
 import java.util.Optional;
 
 @Component
-public class CarperVA implements Carpet {
+public class CarpetVA implements Carpet {
 
     private static final Map<City,BigDecimal> squarePriceForCity = new HashMap<>();
     static {
         squarePriceForCity.put(City.MCLEAN, new BigDecimal("4.32"));
         squarePriceForCity.put(City.ARLINGTON, new BigDecimal("2.92"));
         squarePriceForCity.put(City.FAIRFAX, new BigDecimal("5.34"));
-
     }
 
     @Override
     public BigDecimal getStfTPrice(City city) {
-
-        Optional<Map.Entry<City, BigDecimal>> collect = squarePriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
-
-        return null;
+        BigDecimal defaultValue = BigDecimal.ZERO;
+        Optional<Map.Entry<City, BigDecimal>> collect = squarePriceForCity.entrySet().stream()
+                .filter(x -> x.getKey() == city).findFirst();
+        return collect.isPresent() ? collect.get().getValue() : defaultValue;
     }
 }
