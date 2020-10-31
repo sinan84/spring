@@ -1,14 +1,23 @@
 package com.spring.services;
 
+import com.spring.enums.City;
+import com.spring.services.carpet.CarpetTX;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 @Component
 public class Calculator {
+    public static void main(String[] args) {
+        Map<Object,Map<Enum,Integer>> map = new HashMap<>();
+        //map.put(new CarpetTX(), map.put(new City[0],10));
+    }
     Scanner sc = new Scanner(System.in);
-    public void calculator(){
+    public double calculator(){
+        double price=0;
         System.out.print("Please, select a state : ");
         String state = sc.next();
         if (state.equalsIgnoreCase("VA")||state.equalsIgnoreCase("VIRGINIA")){
@@ -32,5 +41,6 @@ public class Calculator {
 
             }else throw new NoSuchElementException();
         }else throw new NoSuchElementException();
+    return price;
     }
 }
