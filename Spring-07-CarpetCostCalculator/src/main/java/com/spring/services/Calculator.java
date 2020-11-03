@@ -1,13 +1,9 @@
 package com.spring.services;
 
-import com.spring.enums.City;
 import com.spring.interfaces.carpetPrices.Carpet;
 import com.spring.interfaces.floorTypes.Floor;
-import com.spring.services.carpet.CarpetTX;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
