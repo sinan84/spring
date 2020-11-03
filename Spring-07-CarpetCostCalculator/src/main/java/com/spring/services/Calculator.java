@@ -2,6 +2,8 @@ package com.spring.services;
 
 import com.spring.interfaces.carpetPrices.Carpet;
 import com.spring.interfaces.floorTypes.Floor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.NoSuchElementException;
@@ -10,7 +12,11 @@ import java.util.Scanner;
 @Component
 public class Calculator {
     Scanner sc = new Scanner(System.in);
+    @Qualifier("carpetTX")
+    @Autowired
     private Carpet carpet;
+    @Qualifier("kitchen")
+    @Autowired
     private Floor floor;
     public double calculator(){
         double price=0;
