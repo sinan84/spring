@@ -30,8 +30,11 @@
 
     <!--Iteration-->
     <ul>
-        <li th:each="number : ${numbers}" th:text="${number}"></li>
+        <li th:each="num : ${numbers}" th:text="${num}"></li>
     </ul>
+
+    <!--fragment-->
+    <div th:replace="fragments/footer :: merry "></div>
 
 </body>
 </html>
