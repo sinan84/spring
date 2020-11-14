@@ -24,9 +24,14 @@
     <a th:href="@{https://google.com}" target="_blank">Google</a><br>
     <a th:href="@{/student/register}" target="_blank">Register</a><br>
 
-    <!--Adding parameters to link-->
+    <!--Adding parameters to Link-->
     <a th:href="@{/student/welcome(id=3)}" target="_blank">Link 2</a><br>
     <a th:href="@{/student/welcome(id=${student.id})}" target="_blank">Link 3</a><br>
+
+    <!--Iteration-->
+    <ul>
+        <li th:each="number : ${numbers}" th:text="${number}"></li>
+    </ul>
 
 </body>
 </html>
