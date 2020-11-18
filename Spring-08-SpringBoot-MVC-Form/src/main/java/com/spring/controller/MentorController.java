@@ -4,6 +4,7 @@ import com.spring.model.Mentor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
@@ -22,6 +23,11 @@ public class MentorController {
         model.addAttribute("batchList",batchList);
 
         return "mentor/mentor-register";
+    }
+
+    @PostMapping("/confirm")
+    public String submitForm(){
+        return "mentor/mentor-confirmation";
     }
 
 }
