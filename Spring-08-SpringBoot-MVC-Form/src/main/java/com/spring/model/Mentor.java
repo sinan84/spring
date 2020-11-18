@@ -13,6 +13,6 @@ public class Mentor {
     private String email;
     private String gender;
     private boolean graduated;
+    private boolean batch;
     private String company;
-
 }
