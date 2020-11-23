@@ -11,8 +11,8 @@ public class SpringApp {
         mentor.manageAccount();
 
         PartTimeMentor partTime = new PartTimeMentor();
-        mentor = new MentorAccount(partTime);
-        mentor.manageAccount();
+        MentorAccount mentor2 = new MentorAccount(partTime);
+        mentor2.manageAccount();
 
     }
 }
