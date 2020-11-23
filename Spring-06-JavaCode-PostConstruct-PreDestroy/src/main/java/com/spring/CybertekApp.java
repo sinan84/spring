@@ -10,6 +10,6 @@ public class CybertekApp {
         ApplicationContext container = new AnnotationConfigApplicationContext(CybertekAppConfig.class);
         Course course = container.getBean("java", Course.class);
         course.getTeachingHours();
-        ((AnnotationConfigApplicationContext)container).close();
+        ((AnnotationConfigApplicationContext) container).close();
     }
 }

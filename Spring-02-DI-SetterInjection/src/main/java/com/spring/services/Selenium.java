@@ -10,5 +10,6 @@ public class Selenium implements Course {
 
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly teaching hours :" + (15 + officeHours.getHours()));}
+        System.out.println("Weekly teaching hours :" + (15 + officeHours.getHours()));
+    }
 }

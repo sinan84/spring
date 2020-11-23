@@ -12,7 +12,8 @@ import java.util.Optional;
 @Component
 public class CarpetVA implements Carpet {
 
-    private static final Map<City,BigDecimal> squarePriceForCity = new HashMap<>();
+    private static final Map<City, BigDecimal> squarePriceForCity = new HashMap<>();
+
     static {
         squarePriceForCity.put(City.MCLEAN, new BigDecimal("4.32"));
         squarePriceForCity.put(City.ARLINGTON, new BigDecimal("2.92"));

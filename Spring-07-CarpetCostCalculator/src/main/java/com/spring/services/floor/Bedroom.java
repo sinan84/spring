@@ -12,6 +12,6 @@ public class Bedroom implements Floor {
 
     @Override
     public Double getArea() {
-    return width*width;
+        return width * width;
     }
 }

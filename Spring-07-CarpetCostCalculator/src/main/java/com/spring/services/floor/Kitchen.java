@@ -12,6 +12,6 @@ public class Kitchen implements Floor {
 
     @Override
     public Double getArea() {
-        return radius*radius*Math.PI;
+        return radius * radius * Math.PI;
     }
 }

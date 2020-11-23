@@ -13,5 +13,4 @@
     <bean id="officeHours" class="com.spring.services.OfficeHours"></bean>
 
 
-
 </beans>

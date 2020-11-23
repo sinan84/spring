@@ -16,7 +16,7 @@ import java.util.Random;
 public class StudentController {
 
     @GetMapping("/welcome")
-    public String homePage(Model model){
+    public String homePage(Model model) {
         model.addAttribute("name", "Ilker");
         model.addAttribute("gender", "Male");
         String subject = "Collections";
@@ -46,7 +46,7 @@ public class StudentController {
     }
 
     @GetMapping("/register")
-    public String homePage2(){
+    public String homePage2() {
 
         return "student/register";
     }

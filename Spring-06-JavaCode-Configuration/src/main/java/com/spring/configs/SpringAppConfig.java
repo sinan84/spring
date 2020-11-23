@@ -12,21 +12,23 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @ComponentScan("com.spring")
 @PropertySource("classpath:application.properties")
-public class CybertekAppConfig {
+public class SpringAppConfig {
     @Bean
-    public Java java(){
+    public Java java() {
         return new Java();
     }
+
     @Bean
-    public Selenium selenium(){
+    public Selenium selenium() {
         return new Selenium(extraSessions());
     }
-//    @Bean
+
+    //    @Bean
 //    public OfficeHours officeHours(){
 //        return new OfficeHours();
 //    }
     @Bean
-    public ExtraSessions extraSessions(){
+    public ExtraSessions extraSessions() {
         return new OfficeHours();
     }
 }

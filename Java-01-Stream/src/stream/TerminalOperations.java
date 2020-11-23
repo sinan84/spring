@@ -11,10 +11,10 @@ public class TerminalOperations {
     public static void main(String[] args) {
 
         System.out.println("***********COUNT***********");
-        long count = Arrays.asList(1,2,34,5,6,6,4,6,5).stream().count();
+        long count = Arrays.asList(1, 2, 34, 5, 6, 6, 4, 6, 5).stream().count();
         System.out.println(count);
 
-        long count2 = Arrays.asList("Apple","Orange","Kiwi","Banana", "Apple","Cheery","Mango").stream().filter(str -> str.equals("Apple")).count();
+        long count2 = Arrays.asList("Apple", "Orange", "Kiwi", "Banana", "Apple", "Cheery", "Mango").stream().filter(str -> str.equals("Apple")).count();
         System.out.println(count2);
 
         System.out.println("***********FIND FIRST - FIND ANY***********");
@@ -25,25 +25,17 @@ public class TerminalOperations {
         System.out.println(r2.getId());
 
         System.out.println("***********COLLECT***********");
-        List<String> appleList = Arrays.asList("Apple","Orange","Kiwi","Banana", "Apple","Cheery","Mango")
+        List<String> appleList = Arrays.asList("Apple", "Orange", "Kiwi", "Banana", "Apple", "Cheery", "Mango")
                 .stream().filter(s -> s.equals("Apple")).collect(Collectors.toList());
 
         System.out.println(appleList.stream().count());
 
         System.out.println("***********REDUCE***********");
-        int total = Arrays.asList(3,4,5,6,12,20).stream().reduce(5,(x,y) -> x+y);
+        int total = Arrays.asList(3, 4, 5, 6, 12, 20).stream().reduce(5, (x, y) -> x + y);
         System.out.println(total);
 
-        String word = Arrays.asList("C","Y","B","E","R","T","E","K").stream().reduce("",(a,b) -> a+b);
+        String word = Arrays.asList("C", "Y", "B", "E", "R", "T", "E", "K").stream().reduce("", (a, b) -> a + b);
         System.out.println(word);
-
-
-
-
-
-
-
-
 
 
     }

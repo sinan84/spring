@@ -9,7 +9,7 @@ public class FunctionalInterface {
     public static void main(String[] args) {
 
         //Accepts a single parameter and returns a single value
-        Function<Integer,Double> half = a -> a/2.0;
+        Function<Integer, Double> half = a -> a / 2.0;
         System.out.println(half.apply(10));
 
         //Does not accept any arguments and returns an object
@@ -21,7 +21,7 @@ public class FunctionalInterface {
         display.accept(10);
 
         //Accepts a single argument and returns true or false
-        Predicate<Integer> lesserThan = i -> (i<10);
+        Predicate<Integer> lesserThan = i -> (i < 10);
         System.out.println(lesserThan.test(5));
 
         // Commit

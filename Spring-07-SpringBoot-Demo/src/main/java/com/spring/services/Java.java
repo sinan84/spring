@@ -21,17 +21,17 @@ public class Java implements Course {
     }
 
     public void getTeachingHours() {
-        System.out.println("Weekly teaching hours : "+ officeHours.getHours() );
+        System.out.println("Weekly teaching hours : " + officeHours.getHours());
     }
 
 
     @PostConstruct
-    public void postConstruct(){
+    public void postConstruct() {
         System.out.println("Executing postConstruct method");
     }
 
     @PreDestroy
-    public void preDestroy(){
+    public void preDestroy() {
         System.out.println("Executing preDestroy method");
     }
 

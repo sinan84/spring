@@ -16,7 +16,7 @@ public class Selenium implements Course {
 
     public void getTeachingHours() {
 
-        System.out.println("Weekly teaching hours :" + (20+officeHours.getHours()));
+        System.out.println("Weekly teaching hours :" + (20 + officeHours.getHours()));
 
     }
 }

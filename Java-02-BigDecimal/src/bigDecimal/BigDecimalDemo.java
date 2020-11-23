@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 public class BigDecimalDemo {
     public static void main(String[] args) {
 
-        double a0=0.03;
-        double b0=0.04;
-        double c0=b0-a0;
+        double a0 = 0.03;
+        double b0 = 0.04;
+        double c0 = b0 - a0;
         System.out.println(c0);
 
         BigDecimal a1 = new BigDecimal("0.03");
@@ -38,7 +38,7 @@ public class BigDecimalDemo {
         System.out.println(multiplyResult);
         BigDecimal divideResult = a.divide(c);
         System.out.println(divideResult);
-        BigDecimal divideResult2 = a.divide(b,2);
+        BigDecimal divideResult2 = a.divide(b, 2);
         System.out.println(divideResult2);
         BigDecimal combineResult = b.multiply(c).add(a).subtract(b);
         System.out.println(combineResult);

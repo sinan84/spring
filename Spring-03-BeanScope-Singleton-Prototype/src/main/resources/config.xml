@@ -9,8 +9,4 @@
     <bean id="selenium" class="com.spring.services.Selenium"></bean>
 
 
-
-
-
-
 </beans>

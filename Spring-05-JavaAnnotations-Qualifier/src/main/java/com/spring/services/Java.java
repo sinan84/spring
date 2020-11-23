@@ -18,7 +18,7 @@ public class Java implements Course {
 
     public void getTeachingHours() {
 
-            System.out.println("Weekly teaching hours :" + (30+ extraSessions.getHours()) );
+        System.out.println("Weekly teaching hours :" + (30 + extraSessions.getHours()));
 
     }
 }
