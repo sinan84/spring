@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import services.FullTimeMentor;
 
-public class CybertekApp {
+public class SpringApp {
     public static void main(String[] args) {
 
         //BeanFactory container = new ClassPathXmlApplicationContext("config.xml");
@@ -17,9 +17,9 @@ public class CybertekApp {
 
         mentor.createAccount();
 
-        mentor = (Mentor) container.getBean("partTimeMentor");
+        Mentor mentor2 = (Mentor) container.getBean("partTimeMentor");
 
-        mentor.createAccount();
+        mentor2.createAccount();
 
     }
 }
