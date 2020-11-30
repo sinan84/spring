@@ -2,7 +2,6 @@ package lambda.shape;
 
 public class ShapeTest {
     public static void main(String[] args) {
-
         Drawable drawable = () -> System.out.println("Drawing a circle");
         drawable.draw();
 
@@ -20,6 +19,5 @@ public class ShapeTest {
 
         Drawable4 drawable4 = (shape, area) -> "Drawing a " + shape + " and it's area is " + area;
         System.out.println(drawable4.draw("Circle", 200));
-
     }
 }
