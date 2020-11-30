@@ -34,5 +34,6 @@ public class IntermediateOperations {
 
         System.out.println("***********SORTED REVERSED ORDER***********");
         Arrays.asList(1, 2, 3, 4, 6, 5, 7, 8, 9).stream().sorted(Comparator.reverseOrder()).forEach(number -> System.out.println(number));
+
     }
 }
