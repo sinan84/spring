@@ -22,12 +22,14 @@ public class Student {
     private String email;
     @Transient
     private String city;
+
     @Temporal(TemporalType.DATE)
     private Date birthDate;
     @Temporal(TemporalType.TIME)
     private Date birthTime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date birthDateTime;
+
     @Column(columnDefinition = "DATE")
     private LocalDate localDate;
     @Column(columnDefinition = "TIME")
